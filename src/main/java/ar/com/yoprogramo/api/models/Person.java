@@ -17,12 +17,29 @@ public class Person {
     private Long id;
     private String nombre;
     private String apellido;
-
+    private String lugar;
+    private String titulo;
     @Column(name = "url_imagen", length = 2048)
     private String urlimage;
 
     public Long getId() {
         return id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getLugar() {
+        return lugar;
+    }
+
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
     }
 
     public String getNombre() {
