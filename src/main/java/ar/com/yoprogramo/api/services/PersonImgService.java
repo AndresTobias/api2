@@ -17,7 +17,7 @@ public class PersonImgService {
     public ArrayList<PersonImg> getAllPersonsImg() {
         return (ArrayList<PersonImg>) personImgRepository.findAll();
     }
-    public PersonImg savePerson(PersonImg personaImg){
+    public PersonImg savePersonImg(PersonImg personaImg){
         return personImgRepository.save(personaImg);
     }
     public Optional<PersonImg> getPersonImgByID(long id) {

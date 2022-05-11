@@ -15,50 +15,50 @@ public class PersonImg {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "url_imagen1", length = 2048)
-    private String urlimage1;
-    @Column(name = "url_imagen2", length = 2048)
-    private String urlimage2;
-    @Column(name = "url_imagen3", length = 2048)
-    private String urlimage3;
-    @Column(name = "url_imagen4", length = 2048)
-    private String urlimage4;
+    @Column(name = "text5", length = 2048)
+    private String text5;
+    @Column(name = "text6", length = 2048)
+    private String text6;
+    @Column(name = "text7", length = 2048)
+    private String text7;
+    @Column(name = "text8", length = 2048)
+    private String text8;
 
     // get y set
-    public void setUrlimage1(String urlimage1) {
-        this.urlimage1 = urlimage1;
+    public void setText5(String text5) {
+        this.text5 = text5;
     }
 
-    public void setUrlimage2(String urlimage2) {
-        this.urlimage2 = urlimage2;
+    public void setText6(String text6) {
+        this.text6 = text6;
     }
 
-    public void setUrlimage3(String urlimage3) {
-        this.urlimage3 = urlimage3;
+    public void setText7(String text7) {
+        this.text7 = text7;
     }
 
-    public void setUrlimage4(String urlimage4) {
-        this.urlimage4 = urlimage4;
+    public void setText8(String text8) {
+        this.text8 = text8;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    public String getUrlimage1() {
-        return urlimage1;
+    public String getText5() {
+        return text5;
     }
 
-    public String getUrlimage2() {
-        return urlimage2;
+    public String getText6() {
+        return text6;
     }
 
-    public String getUrlimage3() {
-        return urlimage3;
+    public String getText7() {
+        return text7;
     }
 
-    public String getUrlimage4() {
-        return urlimage4;
+    public String getText8() {
+        return text8;
     }
 
     public Long getId() {
