@@ -1,6 +1,7 @@
 package ar.com.yoprogramo.api.services;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,9 @@ public ArrayList<PersonData> getAllPersons() {
 }
 public PersonData savePerson(PersonData persona){
     return personDataRepository.save(persona);
+}
+public Optional<PersonData> getPersonByID(long id) {
+    return personDataRepository.findById(id);
 }
 
 

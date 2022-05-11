@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import ar.com.yoprogramo.api.models.PersonData;
 
-public interface PersonDataRepository extends JpaRepository<PersonData,Long> {
-    
+public interface PersonDataRepository extends JpaRepository<PersonData, Long> {
+
 }
