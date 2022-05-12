@@ -23,38 +23,39 @@ public class Estudios {
     private Integer ingreso;
     private Integer egreso;
 
+    // todos los get
+    public Long getId() {
+        return id;
+    }
+
     public String getInstitucion() {
         return institucion;
     }
 
-    public Integer getEgreso() {
-        return egreso;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public Integer getIngreso() {
-        return ingreso;
-    }
-
-    public Integer getDuracion() {
-        return duracion;
+    public String getlogo() {
+        return logo;
     }
 
     public String getCarrera() {
         return carrera;
     }
 
-    public String getTitulo() {
-        return titulo;
-    }
-    public String getText8() {
-        return logo;
+    public Integer getDuracion() {
+        return duracion;
     }
 
-    public Long getId() {
-        return id;
+    public Integer getIngreso() {
+        return ingreso;
     }
-    
-    
+
+    public Integer getEgreso() {
+        return egreso;
+    }
+
     public void setEgreso(Integer egreso) {
         this.egreso = egreso;
     }
@@ -78,6 +79,7 @@ public class Estudios {
     public void setDuracion(Integer duracion) {
         this.duracion = duracion;
     }
+
     public void setlogo(String logo) {
         this.logo = logo;
     }
