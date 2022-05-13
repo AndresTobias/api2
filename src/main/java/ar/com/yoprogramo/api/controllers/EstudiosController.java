@@ -32,14 +32,18 @@ public class EstudiosController {
         return estudiosService.saveEstudios(person);
     }
 
-    // para borrar
-    @DeleteMapping("/{id}")
+    // para borrar este es el original
+   /* @DeleteMapping("/{id}")
     public String removePerson(@PathVariable("id") Long id) {
         if (estudiosService.removeEstudio(id)) {
-            return "se elimino " + id + "ok";
+           return "se elimino " + id + "ok";
         } else {
             return "no se borro";
         }
+    }*/
+    @DeleteMapping("/{id}")
+    public boolean removePerson(@PathVariable("id") Long id) {
+        return (estudiosService.removeEstudio(id));
     }
 
 }
